@@ -10,3 +10,11 @@ for i in range(n):
     result = max(result, min_value)
 
 print(result) # 최종 답안 출력
+
+''''''''''''''''''''''''''''''
+
+# 딕셔너리 최대 value에 대한 key 찾기
+di = {'a': 0, 'b': 1, 'c': 2, 'd': 3} # 직접 생성
+di = dict(zip('abcd',range(4))) # zip 함수를 사용해 dict 생성: zip(key list, value list)
+
+result = [k for k,v in di.items() if max(di.values()) == v]
